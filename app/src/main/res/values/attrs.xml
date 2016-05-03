@@ -10,26 +10,18 @@
         <attr name="strokeColor" format="color" />
         <attr name="strokeWidth" format="dimension" />
         <attr name="textPaddingTop" format="dimension" />
-        <attr name="imageIcon" format="reference"/>
+        <attr name="imageIcon" format="reference" />
         <attr name="imageIconScaleType">
-            <enum name="fillXY" value="0"/>
-            <enum name="center" value="1"/>
+            <enum name="fillXY" value="0" />
+            <enum name="center" value="1" />
         </attr>
     </declare-styleable>
-
-    <attr name="titleText" format="string" />
-    <attr name="titleTextSize" format="dimension" />
-    <attr name="titleTextColor" format="color" />
-    <attr name="image" format="reference" />
-    <attr name="imageScaleType">
-        <enum name="fillXY" value="0" />
-        <enum name="center" value="1" />
-    </attr>
-    <declare-styleable name="CustomImageView">
-        <attr name="titleText" />
-        <attr name="titleTextSize" />
-        <attr name="titleTextColor" />
-        <attr name="image" />
-        <attr name="imageScaleType" />
+    <!-- 可变色的progressBar-->
+    <declare-styleable name="ColorfulProgressBar">
+        <attr name="firstColor" format="color" />
+        <attr name="secondColor" format="color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="speed" format="integer" />
     </declare-styleable>
+
 </resources>

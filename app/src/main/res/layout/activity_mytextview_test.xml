@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:myTextView="http://schemas.android.com/apk/res-auto"
-    xmlns:zhy="http://schemas.android.com/apk/res/com.itcode.customView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -22,48 +21,30 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:padding="10dp"
-        myTextView:imageIcon="@drawable/ic_launcher"
-        myTextView:imageIconScaleType="center"
-        myTextView:rectColor="#00FF00"
-        myTextView:strokeColor="#FF0000"
-        myTextView:strokeWidth="1.33dp"
-        myTextView:textColor="#0000FF"
-        myTextView:textPaddingTop="50dp"
-        myTextView:textSize="14sp"
-        myTextView:text="hello  ! " />
+        app:imageIcon="@drawable/ic_launcher"
+        app:imageIconScaleType="center"
+        app:rectColor="#00FF00"
+        app:strokeColor="#FF0000"
+        app:strokeWidth="1.33dp"
+        app:text="hello  ! "
+        app:textColor="#0000FF"
+        app:textPaddingTop="50dp"
+        app:textSize="14sp" />
 
-    <com.itcode.customView.view.CustomImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        zhy:image="@drawable/ic_launcher"
-        zhy:imageScaleType="center"
-        zhy:titleText="hello andoridandoridandoridandorid ! "
-        zhy:titleTextColor="#ff0000"
-        zhy:titleTextSize="14sp" />
-
-    <com.itcode.customView.view.CustomImageView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        zhy:image="@drawable/ic_launcher"
-        zhy:imageScaleType="center"
-        zhy:titleText="helloworldwelcome"
-        zhy:titleTextColor="#00ff00"
-        zhy:titleTextSize="14sp" />
-
-    <com.itcode.customView.view.CustomImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:visibility="gone"
-        zhy:image="@drawable/hxm"
-        zhy:imageScaleType="center"
-        zhy:titleText="妹子~"
-        zhy:titleTextColor="#ff0000"
-        zhy:titleTextSize="12sp" />
+    <com.itcode.customView.view.ColorfulProgressBar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:firstColor="#FF0000"
+        app:secondColor="#00FF00"
+        app:speed="20"
+        app:circleWidth="10dp"/>
+    <com.itcode.customView.view.ColorfulProgressBar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:firstColor="#FF0000"
+        app:secondColor="#00FF00"
+        app:speed="40"
+        app:circleWidth="20dp"/>
     <!--</LinearLayout>-->
     <!--</ScrollView>-->
 </LinearLayout>

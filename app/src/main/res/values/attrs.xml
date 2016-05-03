@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 注意strokeWidth应该设置精确一些，最好保留小数点两位，不然会有上下stroke的宽度显示不一致-->
+    <!-- 可比较设置为1dp和1.33dp的效果-->
+    <declare-styleable name="MyTextView">
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="rectColor" format="color" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="textPaddingTop" format="dimension" />
+        <attr name="imageIcon" format="reference"/>
+        <attr name="imageIconScaleType">
+            <enum name="fillXY" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <attr name="titleText" format="string" />
+    <attr name="titleTextSize" format="dimension" />
+    <attr name="titleTextColor" format="color" />
+    <attr name="image" format="reference" />
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0" />
+        <enum name="center" value="1" />
+    </attr>
+    <declare-styleable name="CustomImageView">
+        <attr name="titleText" />
+        <attr name="titleTextSize" />
+        <attr name="titleTextColor" />
+        <attr name="image" />
+        <attr name="imageScaleType" />
+    </declare-styleable>
+</resources>

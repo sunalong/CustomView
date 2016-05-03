@@ -16,12 +16,25 @@
             <enum name="center" value="1" />
         </attr>
     </declare-styleable>
+
+    <attr name="circleWidth" format="dimension" />
+    <attr name="spaceAngle" format="integer"/>
     <!-- 可变色的progressBar-->
     <declare-styleable name="ColorfulProgressBar">
         <attr name="firstColor" format="color" />
         <attr name="secondColor" format="color" />
-        <attr name="circleWidth" format="dimension" />
         <attr name="speed" format="integer" />
+        <attr name="circleWidth"/>
     </declare-styleable>
 
+    <!-- 微信声音控件-->
+    <declare-styleable name="WechatView">
+        <attr name="beforeColor" format="color"/>
+        <attr name="afterColor" format="color"/>
+        <attr name="circleWidth"/>
+        <attr name="dotCount" format="integer"/>
+        <attr name="splitSize" format="integer"/>
+        <attr name="bgIcon" format="reference"/>
+        <attr name="spaceAngle"/>
+    </declare-styleable>
 </resources>

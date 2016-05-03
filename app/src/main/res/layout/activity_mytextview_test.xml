@@ -47,7 +47,7 @@
         app:afterColor="#00FF00"
         app:beforeColor="#FF0000"
         app:circleWidth="6dp"
-        app:bgIcon="@drawable/ic_screenshot"
+        app:bgIcon="@drawable/ic_launcher"
         app:dotCount="25"
         app:spaceAngle="60"
         app:splitSize="5" />

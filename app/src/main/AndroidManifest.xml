@@ -11,13 +11,22 @@
             android:name="com.itcode.customView.test.MyTextViewTestActivity"
             android:label="myTextViewTest"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.itcode.customView.test.MyGroupViewTestView"
+            android:label="myTextViewTest"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.itcode.customView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+
+            <com.itcode.customView.view.ItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                myTextView:rectColor="#00FF00"
+                myTextView:strokeColor="#FF0000"
+                myTextView:strokeWidth="1.33dp"
+                myTextView:text="MyTextView示例"
+                myTextView:textColor="#0000FF"
+                myTextView:textSize="14sp" />
+
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

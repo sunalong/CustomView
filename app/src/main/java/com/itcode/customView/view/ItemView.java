@@ -21,10 +21,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * TODO:有bug，应让view可自适应文字改变大小
+ * TODO:点击效果【文字、图片、边框、背景色】
  * Created by sunalong on 2016/4/26.
  */
-public class MyTextView extends View {
+public class ItemView extends View {
     private static final int IMAGE_SCALE_FITXY = 0;
     private static final int IMAGE_SCALE_CENTER = 1;
     /**
@@ -80,15 +80,15 @@ public class MyTextView extends View {
      */
     float width, height;
 
-    public MyTextView(Context context) {
+    public ItemView(Context context) {
         this(context, null, 0);
     }
 
-    public MyTextView(Context context, AttributeSet attrs) {
+    public ItemView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public MyTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ItemView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initAttrs(context, attrs);
         initView();
@@ -229,36 +229,36 @@ public class MyTextView extends View {
      * @param attrs
      */
     private void initAttrs(Context context, AttributeSet attrs) {
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.MyTextView);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ItemView);
         for (int i = 0; i < typedArray.getIndexCount(); i++) {
             int attr = typedArray.getIndex(i);
             switch (attr) {
-                case R.styleable.MyTextView_text:
+                case R.styleable.ItemView_text:
                     textDescription = typedArray.getString(attr);
                     break;
-                case R.styleable.MyTextView_textSize:
+                case R.styleable.ItemView_textSize:
                     //设置默认值为14sp,TypedValue可以把sp转化为px
                     textSize = typedArray.getDimensionPixelSize(attr, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 14, getResources().getDisplayMetrics()));
                     break;
-                case R.styleable.MyTextView_textColor:
+                case R.styleable.ItemView_textColor:
                     textColor = typedArray.getColor(attr, Color.WHITE);
                     break;
-                case R.styleable.MyTextView_rectColor:
+                case R.styleable.ItemView_rectColor:
                     rectColor = typedArray.getColor(attr, Color.BLACK);
                     break;
-                case R.styleable.MyTextView_strokeColor:
+                case R.styleable.ItemView_strokeColor:
                     strokeColor = typedArray.getColor(attr, Color.RED);
                     break;
-                case R.styleable.MyTextView_strokeWidth:
+                case R.styleable.ItemView_strokeWidth:
                     strokeWidth = typedArray.getDimensionPixelSize(attr, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, 2, getResources().getDisplayMetrics()));
                     break;
-                case R.styleable.MyTextView_textPaddingTop:
+                case R.styleable.ItemView_textPaddingTop:
                     textPaddingTop = typedArray.getDimensionPixelSize(attr, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, 2, getResources().getDisplayMetrics()));
                     break;
-                case R.styleable.MyTextView_imageIcon:
+                case R.styleable.ItemView_imageIcon:
                     imageIcon = BitmapFactory.decodeResource(getResources(), typedArray.getResourceId(attr, 0));
                     break;
-                case R.styleable.MyTextView_imageIconScaleType:
+                case R.styleable.ItemView_imageIconScaleType:
                     imageIconScaleType = typedArray.getInt(attr, 0);
                     break;
             }

@@ -1,0 +1,38 @@
+<com.itcode.customView.view.drag.MyVDHLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="#44ff0000"
+        android:padding="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="I can be dragged!" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#8800ff00"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="i will back to origin pos !" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#880000ff"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="use edge tracker to operate me !" />
+
+</com.itcode.customView.view.drag.MyVDHLayout>

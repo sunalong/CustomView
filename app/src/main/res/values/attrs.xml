@@ -2,7 +2,7 @@
 <resources>
     <!-- 注意strokeWidth应该设置精确一些，最好保留小数点两位，不然会有上下stroke的宽度显示不一致-->
     <!-- 可比较设置为1dp和1.33dp的效果-->
-    <declare-styleable name="MyTextView">
+    <declare-styleable name="ItemView">
         <attr name="text" format="string" />
         <attr name="textSize" format="dimension" />
         <attr name="textColor" format="color" />
@@ -17,7 +17,7 @@
         </attr>
     </declare-styleable>
 
-    <attr name="circleWidth" format="dimension" />
+        <attr name="circleWidth" format="dimension" />
     <attr name="spaceAngle" format="integer"/>
     <!-- 可变色的progressBar-->
     <declare-styleable name="ColorfulProgressBar">

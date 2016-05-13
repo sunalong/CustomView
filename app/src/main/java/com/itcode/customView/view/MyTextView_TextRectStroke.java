@@ -181,27 +181,27 @@ public class MyTextView_TextRectStroke extends View {
      * @param attrs
      */
     private void initAttrs(Context context, AttributeSet attrs) {
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.MyTextView);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ItemView);
         for (int i = 0; i < typedArray.getIndexCount(); i++) {
             int attr = typedArray.getIndex(i);
             switch (attr) {
-                case R.styleable.MyTextView_text:
+                case R.styleable.ItemView_text:
                     textDescription = typedArray.getString(attr);
                     break;
-                case R.styleable.MyTextView_textSize:
+                case R.styleable.ItemView_textSize:
                     //设置默认值为14sp,TypedValue可以把sp转化为px
                     textSize = typedArray.getDimensionPixelSize(attr, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 14, getResources().getDisplayMetrics()));
                     break;
-                case R.styleable.MyTextView_textColor:
+                case R.styleable.ItemView_textColor:
                     textColor = typedArray.getColor(attr, Color.WHITE);
                     break;
-                case R.styleable.MyTextView_rectColor:
+                case R.styleable.ItemView_rectColor:
                     rectColor = typedArray.getColor(attr, Color.BLACK);
                     break;
-                case R.styleable.MyTextView_strokeColor:
+                case R.styleable.ItemView_strokeColor:
                     strokeColor = typedArray.getColor(attr, Color.RED);
                     break;
-                case R.styleable.MyTextView_strokeWidth:
+                case R.styleable.ItemView_strokeWidth:
                     strokeWidth = typedArray.getDimensionPixelSize(attr, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, 2, getResources().getDisplayMetrics()));
                     break;
 //                case R.styleable.MyTextView_paddingLeft:

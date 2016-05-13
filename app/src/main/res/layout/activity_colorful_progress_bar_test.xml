@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.itcode.customView.view.ColorfulProgressBar
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:circleWidth="10dp"
+        app:firstColor="#FF0000"
+        app:secondColor="#00FF00"
+        app:speed="20" />
+</LinearLayout>

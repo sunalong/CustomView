@@ -1,4 +1,15 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="MyTextView"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="14sp"-->
+    <style name="MyButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 
 </resources>

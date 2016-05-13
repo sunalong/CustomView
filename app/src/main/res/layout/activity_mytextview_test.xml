@@ -6,17 +6,7 @@
     android:background="#FFFFFF"
     android:orientation="vertical">
 
-    <!--<ScrollView-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent">-->
-
-    <!--<LinearLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:orientation="vertical">-->
-
-
-    <com.itcode.customView.view.MyTextView
+    <com.itcode.customView.view.ItemView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -31,28 +21,4 @@
         app:textPaddingTop="50dp"
         app:textSize="14sp" />
 
-    <com.itcode.customView.view.ColorfulProgressBar
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        app:circleWidth="10dp"
-        app:firstColor="#FF0000"
-        app:secondColor="#00FF00"
-        app:speed="20" />
-
-    <com.itcode.customView.view.WechatView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="#000000"
-        android:layout_marginTop="20dp"
-        app:afterColor="#00FF00"
-        app:beforeColor="#FF0000"
-        app:circleWidth="6dp"
-        app:bgIcon="@drawable/ic_launcher"
-        app:dotCount="25"
-        app:spaceAngle="60"
-        app:splitSize="5" />
-
-
-    <!--</LinearLayout>-->
-    <!--</ScrollView>-->
 </LinearLayout>

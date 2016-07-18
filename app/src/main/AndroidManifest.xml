@@ -9,7 +9,7 @@
         android:supportsRtl="true">
         <activity
             android:name="com.itcode.customView.test.MainActivity"
-            android:label="myTextViewTest"
+            android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,6 +47,12 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="com.itcode.customView.test.LauncherActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.itcode.customView.test.SingleTouchViewTestActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.itcode.customView.test.MatrixActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
 

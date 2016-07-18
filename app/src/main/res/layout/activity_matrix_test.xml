@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2200FF00"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_bg"
+            android:onClick="translateView"
+            android:padding="2dp"
+            android:text="平移"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_bg"
+            android:onClick="rotateView"
+            android:padding="2dp"
+            android:text="旋转"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_bg"
+            android:onClick="scaleView"
+            android:padding="2dp"
+            android:text="缩放"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_bg"
+            android:onClick="skewView"
+            android:padding="2dp"
+            android:text="错切"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_bg"
+            android:onClick="symmetricView"
+            android:padding="2dp"
+            android:text="对称"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.itcode.customView.matrix.MatrixImageView
+            android:id="@+id/ivTestMatrix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>

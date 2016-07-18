@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_single_touch_view);
         setContentView(R.layout.activity_main);
         initData();
         initView();
@@ -44,6 +45,8 @@ public class MainActivity extends Activity {
         data.add(StickyDownAnimationActivity.class);
         data.add(TestScrollMethodsActivity.class);
         data.add(LauncherActivity.class);
+        data.add(SingleTouchViewTestActivity.class);
+        data.add(MatrixActivity.class);
     }
 
     private void initView() {

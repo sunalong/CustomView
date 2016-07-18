@@ -23,7 +23,9 @@ public class LauncherActivity extends Activity {
     for (int i = 0; i < images.length; i++) {
       ImageView mImageView = new ImageView(this);
       mImageView.setScaleType(ImageView.ScaleType.FIT_XY);
-      mImageView.setBackgroundResource(images[i]);
+//      mImageView.setBackgroundResource(images[i]);
+      //TODO:为何会错,我日
+      mImageView.setBackgroundResource(R.drawable.ic_launcher);
       mImageView.setLayoutParams(new LinearLayout.LayoutParams(
           LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
       mCusScrollView.addView(mImageView);

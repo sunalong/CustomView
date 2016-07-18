@@ -48,7 +48,7 @@ public abstract class RecyclerviewAdapter<T> extends RecyclerView.Adapter {
     }
 
     @Override
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
         if (holder instanceof CommentViewHoder) {
             CommentViewHoder commentViewHoder = (CommentViewHoder) holder;
             commentViewHoder.setPossion(position);
@@ -59,7 +59,8 @@ public abstract class RecyclerviewAdapter<T> extends RecyclerView.Adapter {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    int position = holder.getLayoutPosition();
+//                    int position = holder.getLayoutPosition();
+//                    int position = holder.();
                     onItemClick.itemClick(holder.itemView, position);
                 }
             });

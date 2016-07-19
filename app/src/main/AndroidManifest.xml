@@ -54,6 +54,9 @@
         <activity
             android:name="com.itcode.customView.test.MatrixActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.itcode.customView.test.SingleTouchTextViewTestActivity"/>
+        <activity android:name="com.itcode.customView.test.TestPathActivity"/>
+        <activity android:name="com.itcode.customView.test.TextViewTestActivity"/>
     </application>
 
 </manifest>

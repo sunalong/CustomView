@@ -1,0 +1,15 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.itcode.customView.view.matrix.SingleTouchTextView
+        android:id="@+id/SingleTouchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:controlLocation="right_top"
+        app:frameColor="#0022ff"
+        app:scale="1.2"
+        app:text = "所以在移动的时候会不停的闪烁"
+        app:textColor = "#00FF00"
+        app:textSize="20sp"
+        app:src="@drawable/rect_bg_transparent"/>
+</merge>

@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.itcode.customView.R;
-import com.itcode.customView.matrix.MatrixImageView;
+import com.itcode.customView.view.matrix.MatrixImageView;
 
 /**
  * 矩阵变换:

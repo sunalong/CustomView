@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:Android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    Android:layout_width="match_parent"
+    Android:scrollbars="none"
+    Android:layout_height="match_parent"
+    Android:background="#ffffffff"
+    >
+
+    <LinearLayout
+        Android:layout_width="fill_parent"
+        Android:layout_height="fill_parent"
+        Android:orientation="vertical">
+
+        <com.itcode.customView.view.StartCustomTextView
+            Android:id="@+id/mv"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            app:lineSpacingExtra="15sp"
+            app:textColor="#aa000000"
+            app:textSize="15sp"
+            app:textwidth="320"
+            app:typeface="serif">
+        </com.itcode.customView.view.StartCustomTextView>
+    </LinearLayout>
+</ScrollView>

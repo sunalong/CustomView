@@ -47,6 +47,9 @@ public class MainActivity extends Activity {
         data.add(LauncherActivity.class);
         data.add(SingleTouchViewTestActivity.class);
         data.add(MatrixActivity.class);
+        data.add(SingleTouchTextViewTestActivity.class);
+        data.add(TestPathActivity.class);
+        data.add(TextViewTestActivity.class);
     }
 
     private void initView() {

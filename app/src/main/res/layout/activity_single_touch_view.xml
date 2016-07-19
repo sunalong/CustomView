@@ -1,0 +1,14 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.itcode.customView.view.matrix.SingleTouchView
+        android:id="@+id/SingleTouchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:controlLocation="right_top"
+        app:frameColor="#0022ff"
+        app:scale="1.2"
+        app:src="@mipmap/test_pic"/>
+
+
+</merge>

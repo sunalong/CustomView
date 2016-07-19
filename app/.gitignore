@@ -1,1 +1,5 @@
 /build
+SingleTouchView.java
+/.idea/
+/.gradle
+activity_single_touch_view.xml
